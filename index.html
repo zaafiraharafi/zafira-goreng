@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Input Data Produk</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 align="center">Input Data Produk</h1>
+        <form id="inputForm">
+            <label for="namaProduk">Nama Produk:</label>
+            <input type="text" id="namaProduk" required>
+            <label for="hargaSatuan">Harga Satuan:</label>
+            <input type="number" id="hargaSatuan" required>
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" required>
+            <button type="submit">Tambah</button>
+        </form>
+        <table id="dataTable" style="text-align: center; display: none;">
+            <thead>
+                <tr>
+                    <th>Nama Produk</th>
+                    <th>Harga</th>
+                    <th>Jml</th>
+                    <th>JmlHarga</th>
+            </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan ditambahkan di sini -->
+            </tbody>
+        </table>
+        <div class="total" id="totalHarga" style="text-align: center; display: none;">Total Pembayaran: Rp 0</div>
+    </div>
+    <script src="styles.js"></script>
+</body>
+
+</html>
